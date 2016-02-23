@@ -36,6 +36,7 @@ function outsource_twentyfifteen_css() {
 }
 add_action( 'plugins_loaded', 'outsource_twentyfifteen_css' );
 
+// this function is almost a copy of `twentyfifteen_color_scheme_css()`
 function outsource_twentyfifteen_css_print_callback() {
     if ( ! function_exists( 'twentyfifteen_get_color_scheme' ) ) {
         return;
